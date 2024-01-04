@@ -2,7 +2,7 @@ name : Simple workflow
 
 on :
   schedule:
-  - cron: '50 14 * * *'
+  - cron: '55 14 * * *'
 
 
 jobs:
