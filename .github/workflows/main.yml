@@ -1,6 +1,9 @@
 name : Simple workflow
 
-on : [push]
+on :
+  schedule:
+  - cron: '50 14 * * *'
+
 
 jobs:
   job1:
