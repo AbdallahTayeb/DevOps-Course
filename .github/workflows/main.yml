@@ -1,8 +1,8 @@
-name : Simple workflow
+name : Manual Workflow
 
 on :
   schedule:
-  - cron: '55 14 * * *'
+  - cron: '02 13 * * *'
 
 
 jobs:
