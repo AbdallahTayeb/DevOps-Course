@@ -1,0 +1,16 @@
+name: Repository variable
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Afficher Greeting dans le job 1
+      run: |
+            echo "VAR1 : ${{ vars.VAR1 }}"
+            echo "VAR2 : ${{ vars.VAR1 }}"
+
+
+  
