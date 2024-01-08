@@ -6,12 +6,13 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
-    environment: test
     steps:
     - name: Afficher secrets et variables
       run: |
             echo "Variable : ${{ vars.MY_VAR }}"
             echo "Secret : ${{ secrets.MY_SECRET }}"
+
+
 
 
   
