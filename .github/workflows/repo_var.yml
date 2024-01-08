@@ -6,11 +6,12 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    environnement: test
     steps:
-    - name: Afficher Greeting dans le job 1
+    - name: Afficher secrets et variables
       run: |
-            echo "VAR1 : ${{ vars.VAR1 }}"
-            echo "VAR2 : ${{ vars.VAR1 }}"
+            echo "Variable : ${{ vars.MY_VAR }}"
+            echo "Secret : ${{ secrets.MY_SECRET }}"
 
 
   
