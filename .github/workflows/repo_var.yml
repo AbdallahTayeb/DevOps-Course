@@ -1,4 +1,4 @@
-name: Repository variable
+name: Repository secret
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ jobs:
     - name: Afficher secrets et variables
       run: |
             echo "Variable : ${{ vars.MY_VAR }}"
-            echo "Secret : ${{ secrets.MY_SECRET }}"
+            echo "Secret : ${{ secrets.DEMO_SECRET }}"
 
 
 
