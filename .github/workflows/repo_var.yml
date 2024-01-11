@@ -1,4 +1,4 @@
-name: Repository secret
+name: Repository secret Test
 
 on:
   workflow_dispatch:
@@ -6,11 +6,11 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    environment : test
     steps:
     - name: Afficher secrets et variables
       run: |
-            echo "Variable : ${{ vars.MYVAR }}"
-            echo "Secret : ${{ secrets.DEMO_SECRET }}"
+            echo "Variable : ${{ vars.MY_VAR }}"
 
 
 
