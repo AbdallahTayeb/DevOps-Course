@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Afficher secrets et variables
       run: |
-            echo "Variable : ${{ vars.MY_VAR }}"
+            echo "Variable : ${{ vars.MYVAR }}"
             echo "Secret : ${{ secrets.DEMO_SECRET }}"
 
 
