@@ -13,3 +13,4 @@ jobs:
     - name: Exécuter un script si la condition est remplie
       run: echo "La valeur de SEUIL est dans l'intervalle [0, 1]"
 
+
