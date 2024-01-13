@@ -1,4 +1,4 @@
-name: Workflow Conditionnel sur Dernier Message de Commit
+name: Conditionnel sur Dernier Message de Commit
 
 on: push
 
