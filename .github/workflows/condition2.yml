@@ -20,7 +20,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     needs: build
-    if: failure()
+    
     steps:
     - name: Display Failure Message
       run: echo "Le job precedent a echoué"
+
+
