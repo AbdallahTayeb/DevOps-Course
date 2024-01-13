@@ -1,18 +1,15 @@
-name: Workflow avec Condition sur Variable
+name: Workflow avec Condition de Variable
 
-on:
+on: 
   workflow_dispatch:
 
-env:
-  SEUIL: 0.5
 
 jobs:
   job_conditionnel:
     runs-on: ubuntu-latest
+    if: (vars.SEUIL >= 0) && (vars.SEUIL <= 1)
     steps:
-    - name: Définir la variable d'environnement SEUIL
-      run: echo "SEUIL_VALUE=${{ env.SEUIL }}" >> $GITHUB_ENV
-
-    - name: Vérifier la condition sur SEUIL
-      if: (env.SEUIL_VALUE >= 0) && (env.SEUIL_VALUE <= 1)
+    - uses: actions/checkout@v2
+    - name: Exécuter un script si la condition est remplie
       run: echo "La valeur de SEUIL est dans l'intervalle [0, 1]"
+
