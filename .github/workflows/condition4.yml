@@ -5,7 +5,7 @@ on: push
 jobs:
   check-last-commit-message:
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message, 'wesh')
+    if: contains(github.event.head_commit.message, 'wifi')
     steps:
-      - name: Exécuter un script si le dernier message de commit contient 'wesh'
+      - name: Exécuter un script si le dernier message de commit contient 'wifi'
         run: echo "Le mot 'wesh' a été trouvé dans le dernier message de commit."
